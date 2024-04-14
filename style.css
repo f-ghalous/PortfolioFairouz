@@ -155,5 +155,18 @@ body {
         height: 4px;
         border-radius: 5px;
     }
+    .cont-ligne.active .ligne-unique::after {
+        top: 0;
+        transform: rotate(45deg);
+        transition: top 300ms ease, transform 300ms ease;
+    }
+    .cont-ligne.active .ligne-unique {
+        background: transparent;
+    }
 
+    .cont-ligne.active .ligne-unique::before {
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition: bottom 300ms ease, transform 300ms ease;
+    }
 }
